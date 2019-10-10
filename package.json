@@ -1,0 +1,33 @@
+{
+  "name": "atlas",
+  "version": "1.0.0",
+  "description": "A modern &amp; simple portfolio template",
+  "main": "index.js",
+  "scripts": {
+    "dev": "gulp",
+    "fix-node-sass": "chmod -R 777 ./node_modules/*"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mohssineAboutaj/atlas.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mohssineAboutaj/atlas/issues"
+  },
+  "homepage": "https://github.com/mohssineAboutaj/atlas#readme",
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.11.2",
+    "bootstrap": "^4.3.1"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.26.7",
+    "gulp": "^3.9.0",
+    "gulp-cli": "^2.2.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-sass": "^4.0.2",
+    "node-sass": "^4.12.0"
+  }
+}

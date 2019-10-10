@@ -1,0 +1,1 @@
+console.log('heloo script.js')
