@@ -1,4 +1,153 @@
 @import url(../../node_modules/@fortawesome/fontawesome-free/css/all.min.css);
 @import url(../../node_modules/bootstrap/dist/css/bootstrap.min.css);
 body {
-  background-color: red; }
+  background-color: #ffffff; }
+
+/**Global Class**/
+.h1, #about #section-1 h1 {
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: bold; }
+
+.h4, #about #section-1 h4 {
+  color: #56585c;
+  text-align: center;
+  font-weight: 400; }
+
+.line-bas, #about #section-1 #list-line li div, #about #section-1 #line {
+  background-color: #56585c;
+  height: 1px;
+  opacity: 0.5; }
+
+.paragraphes, #about #section-1 #para-1, #about #section-1 #para-2 {
+  color: #56585c;
+  font-size: 15px;
+  line-height: 1.56; }
+
+/**Start About**/
+#about {
+  position: relative; }
+  #about #section-1 h1 {
+    color: #eb2536;
+    margin-top: 20px; }
+    #about #section-1 h1 span {
+      color: #56585c; }
+  #about #section-1 #list-line {
+    text-align: center; }
+    #about #section-1 #list-line i {
+      position: relative;
+      left: -5px;
+      top: -25px;
+      opacity: 0.8; }
+    #about #section-1 #list-line li {
+      display: inline-block;
+      list-style: none;
+      padding: 25px; }
+      #about #section-1 #list-line li div {
+        width: 300px; }
+  #about #section-1 h2 {
+    color: #56585c;
+    font-weight: 400; }
+    #about #section-1 h2 span {
+      font-weight: bold; }
+  #about #section-1 #line {
+    width: 550px;
+    margin: 20px auto; }
+  #about #section-1 #list-2 {
+    position: relative;
+    left: -50px; }
+    #about #section-1 #list-2 li {
+      display: inline-block;
+      list-style: none;
+      color: #56585c;
+      font-size: 16px;
+      text-transform: uppercase;
+      border-right: 1px solid #56585c;
+      padding-left: 15px;
+      padding-right: 15px;
+      cursor: pointer; }
+    #about #section-1 #list-2 #selected {
+      color: #eb2536;
+      font-weight: bold; }
+  #about #section-1 button {
+    background-color: #eb2536;
+    border: none;
+    border-radius: 50px 50px;
+    height: 50px;
+    width: 200px;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer; }
+  #about #section-1 #image-about {
+    height: 320px;
+    width: 520px;
+    border: 2px solid #eb2536;
+    border-radius: 5px;
+    margin-left: 40px; }
+  #about #section-1 img {
+    height: 300px;
+    width: 500px;
+    border-radius: 5px;
+    position: absolute;
+    top: 10px;
+    z-index: 1;
+    position: absolute;
+    top: 30px;
+    left: 40px; }
+  #about #section-2 {
+    margin-top: 100px;
+    background: url("../images/projectmanager-bg.jpg") no-repeat;
+    background-size: 100% 600px; }
+    #about #section-2 #overlay {
+      position: relative;
+      height: 600px;
+      width: 100%;
+      background-color: black;
+      opacity: 0.8;
+      z-index: 1; }
+    #about #section-2 .container {
+      position: absolute;
+      top: 650px;
+      margin: 50px 50px;
+      z-index: 1; }
+      #about #section-2 .container img {
+        height: 450px;
+        width: 450px;
+        border-radius: 250px;
+        border: 10px solid #eb2536; }
+      #about #section-2 .container h1 {
+        font-weight: bold;
+        color: #ffffff; }
+      #about #section-2 .container h2 {
+        color: #eb2536;
+        font-weight: 400;
+        margin-bottom: 30px; }
+      #about #section-2 .container #parag-1, #about #section-2 .container #parag-2 {
+        font-size: 15px;
+        line-height: 1.56;
+        font-style: italic;
+        color: #ffffff;
+        opacity: 0.7;
+        font-weight: 200;
+        line-height: 1.56;
+        margin-bottom: 20px; }
+      #about #section-2 .container #parag-2 {
+        border-left: 5px solid #eb2536;
+        padding: 10px 30px; }
+      #about #section-2 .container ul li {
+        display: inline-block;
+        list-style: none;
+        margin: 5px 0 0 5px;
+        height: 70px;
+        width: 70px;
+        border: 2px solid #eb2536;
+        border-radius: 35px; }
+        #about #section-2 .container ul li:hover {
+          background-color: #eb2536; }
+        #about #section-2 .container ul li a i {
+          padding: 20px;
+          font-size: 30px;
+          color: #eb2536; }
+          #about #section-2 .container ul li a i:hover {
+            color: #ffffff; }

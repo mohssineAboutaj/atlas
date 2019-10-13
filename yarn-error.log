@@ -1,0 +1,59 @@
+Arguments: 
+  C:\Program Files\nodejs\node.exe C:\Users\ANHAR\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js install
+
+PATH: 
+  C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files\nodejs\;;C:\Users\ANHAR\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\ANHAR\AppData\Roaming\npm
+
+Yarn version: 
+  1.19.1
+
+Node version: 
+  10.16.3
+
+Platform: 
+  win32 x64
+
+Trace: 
+  Error: getaddrinfo ENOTFOUND registry.yarnpkg.com registry.yarnpkg.com:443
+      at GetAddrInfoReqWrap.onlookup [as oncomplete] (dns.js:56:26)
+
+npm manifest: 
+  {
+    "name": "atlas",
+    "version": "1.0.0",
+    "description": "A modern &amp; simple portfolio template",
+    "main": "index.js",
+    "scripts": {
+      "dev": "gulp",
+      "fix-node-sass": "chmod -R 777 ./node_modules/*"
+    },
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/mohssineAboutaj/atlas.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "MIT",
+    "bugs": {
+      "url": "https://github.com/mohssineAboutaj/atlas/issues"
+    },
+    "homepage": "https://github.com/mohssineAboutaj/atlas#readme",
+    "dependencies": {
+      "@fortawesome/fontawesome-free": "^5.11.2",
+      "bootstrap": "^4.3.1"
+    },
+    "devDependencies": {
+      "browser-sync": "^2.26.7",
+      "gulp": "^3.9.0",
+      "gulp-cli": "^2.2.0",
+      "gulp-concat": "^2.6.1",
+      "gulp-sass": "^4.0.2",
+      "node-sass": "^4.12.0"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
