@@ -20,7 +20,9 @@
   "homepage": "https://github.com/mohssineAboutaj/atlas#readme",
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.11.2",
-    "bootstrap": "^4.3.1"
+    "bootstrap": "^4.3.1",
+    "jquery": "^3.4.1",
+    "popper.js": "^1.15.0"
   },
   "devDependencies": {
     "browser-sync": "^2.26.7",

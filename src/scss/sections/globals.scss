@@ -1,0 +1,26 @@
+/**Global Class**/
+
+body {
+  background-color: $primary;
+}
+
+.h1 {
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: bold;
+}
+.h4 {
+  color: $dark-gey-blue;
+  text-align: center;
+  font-weight: 400;
+}
+.line-bas {
+  background-color: $dark-gey-blue;
+  height: 1px;
+  opacity: 0.5;
+}
+.paragraphes {
+  color: $dark-gey-blue;
+  font-size: 15px;
+  line-height: 1.56;
+}

@@ -5,14 +5,16 @@ const gulp = require('gulp'),
       config = require('./config');
 
 // set path of files & folder
-const src = config.src,
-      jsFolder = config.jsFolder,
-      jsFiles = config.jsFiles,
-      sassFolder = config.sassFolder,
-      sassFiles = config.sassFiles,
-      cssFolder = config.cssFolder,
-      htmlFiles = config.htmlFiles,
-      jsFilderToConcat = config.jsList;
+const { src,
+        jsFolder,
+        jsFiles,
+        sassFolder,
+        sassFiles,
+        sassMain,
+        cssFolder,
+        htmlFiles,
+        jsList: jsFilderToConcat,
+      } = config;
 
 // fuction to handle the errors
 function handleErr(err) {
@@ -22,7 +24,7 @@ function handleErr(err) {
 }
 
 gulp.task('sass-task', () => {
-  return gulp.src(sassFiles)
+  return gulp.src(sassMain)
         .pipe(gulpSass())
         .on('error', handleErr)
         .pipe(gulp.dest(cssFolder))
