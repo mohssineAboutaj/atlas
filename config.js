@@ -8,6 +8,7 @@ const src = "src/",
       htmlFiles = src + "*.html";
 
 const jsList = [
+  './node_modules/@fortawesome/fontawesome-free/js/all.min.js',
   './node_modules/jquery/dist/jquery.min.js',
   './node_modules/popper/dist/popper.min.js',
   './node_modules/bootstrap/dist/js/bootstrap.min.js',
