@@ -1,6 +1,11 @@
+const port = 3000;
+
 const src = "src/",
       jsFolder = src + "js/",
       jsFiles = jsFolder + "*.js",
+      pugFolder = src + "pug/",
+      pugFiles = src + "**/*.pug",
+      pugMain = src + "index.pug",
       sassFolder = src + "scss/",
       sassFiles = sassFolder + "**/*.scss",
       sassMain = sassFolder + "style.scss",
@@ -19,10 +24,13 @@ module.exports = {
 	src,
   jsFolder,
   jsFiles,
+	jsList,
   sassFolder,
   sassFiles,
   sassMain,
   cssFolder,
-  htmlFiles,
-	jsList,
+  pugFolder,
+  pugFiles,
+  pugMain,
+  port,
 }
