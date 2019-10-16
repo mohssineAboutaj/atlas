@@ -298,14 +298,16 @@ template {
 
 h1, h2, h3, h4, h5, h6,
 .h1,
-#about #section-1 h1, .h2, .h3, .h4, #about #section-1 h4, .h5, .h6 {
+#about #section-1 h1,
+#cervices .section-1 h1, .h2, .h3, .h4, #about #section-1 h4, .h5, .h6 {
   margin-bottom: 0.5rem;
   font-weight: 500;
   line-height: 1.2; }
 
 h1,
 .h1,
-#about #section-1 h1 {
+#about #section-1 h1,
+#cervices .section-1 h1 {
   font-size: 2.5rem; }
 
 h2, .h2 {
@@ -7029,7 +7031,10 @@ body {
 
 
 .h1,
-#about #section-1 h1 {
+#about #section-1 h1,
+#cervices .section-1 h1 {
+  color: #eb2536;
+  margin-top: 40px;
   text-transform: uppercase;
   text-align: center;
   font-weight: bold; }
@@ -7059,17 +7064,17 @@ body {
       color: #56585c; }
   #about #section-1 #list-line {
     text-align: center; }
-    #about #section-1 #list-line i {
-      position: relative;
-      left: -5px;
-      top: -25px;
-      opacity: 0.8; }
     #about #section-1 #list-line li {
       display: inline-block;
       list-style: none;
       padding: 25px; }
       #about #section-1 #list-line li div {
         width: 300px; }
+      #about #section-1 #list-line li i {
+        position: relative;
+        left: -5px;
+        top: -25px;
+        opacity: 0.8; }
   #about #section-1 h2 {
     color: #56585c;
     font-weight: 400; }
@@ -7126,52 +7131,57 @@ body {
     background-size: 100% 600px; }
     #about #section-2 #overlay {
       position: relative;
-      height: 600px;
+      height: 500px;
       width: 100%;
       background-color: black;
       opacity: 0.8;
       z-index: 1; }
-    #about #section-2 .container {
-      position: absolute;
-      top: 650px;
-      z-index: 1; }
-      #about #section-2 .container img {
-        height: 450px;
-        width: 450px;
-        border-radius: 250px;
-        border: 10px solid #eb2536; }
-      #about #section-2 .container h1 {
-        font-weight: bold;
-        color: #ffffff; }
-      #about #section-2 .container h2 {
-        color: #eb2536;
-        font-weight: 400;
-        margin-bottom: 30px; }
-      #about #section-2 .container #parag-1, #about #section-2 .container #parag-2 {
-        font-size: 15px;
-        line-height: 1.56;
-        font-style: italic;
-        color: #ffffff;
-        opacity: 0.7;
-        font-weight: 200;
-        line-height: 1.56;
-        margin-bottom: 20px; }
-      #about #section-2 .container #parag-2 {
-        border-left: 5px solid #eb2536;
-        padding: 10px 30px; }
-      #about #section-2 .container ul li {
-        display: inline-block;
-        list-style: none;
-        margin: 5px 0 0 5px;
-        height: 70px;
-        width: 70px;
-        border: 2px solid #eb2536;
-        border-radius: 35px; }
-        #about #section-2 .container ul li:hover {
-          background-color: #eb2536; }
-        #about #section-2 .container ul li a i {
-          padding: 20px;
-          font-size: 30px;
-          color: #eb2536; }
-          #about #section-2 .container ul li a i:hover {
-            color: #ffffff; }
+      #about #section-2 #overlay #content {
+        position: absolute;
+        z-index: 1; }
+        #about #section-2 #overlay #content img {
+          height: 400px;
+          width: 400px;
+          border-radius: 50%;
+          border: 10px solid #eb2536;
+          z-index: 1;
+          margin: 10%; }
+        #about #section-2 #overlay #content h1 {
+          font-weight: bold;
+          color: #ffffff; }
+        #about #section-2 #overlay #content h2 {
+          color: #eb2536;
+          font-weight: 400;
+          margin-bottom: 30px; }
+        #about #section-2 #overlay #content #parag-1, #about #section-2 #overlay #content #parag-2 {
+          font-size: 15px;
+          line-height: 1.56;
+          font-style: italic;
+          color: #ffffff;
+          opacity: 0.7;
+          font-weight: 200;
+          line-height: 1.56;
+          margin-bottom: 20px; }
+        #about #section-2 #overlay #content #parag-2 {
+          border-left: 5px solid #eb2536;
+          padding: 10px 30px; }
+        #about #section-2 #overlay #content .social {
+          z-index: 1; }
+          #about #section-2 #overlay #content .social div {
+            background-color: #eb2536;
+            color: #ffffff;
+            border-radius: 50%;
+            cursor: pointer;
+            float: left;
+            padding: 15px;
+            margin-left: 20px; }
+            #about #section-2 #overlay #content .social div:hover {
+              background-color: #ffffff;
+              color: #eb2536; }
+
+#cervices .section-1 {
+  height: 500px;
+  width: 100%;
+  background-color: #EEE; }
+  #cervices .section-1 h1 span {
+    color: #56585c; }

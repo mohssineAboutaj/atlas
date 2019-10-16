@@ -1,0 +1,13 @@
+#cervices {
+  .section-1 {
+    height: 500px;
+    width: 100%;
+    background-color: #EEE;
+    h1 {
+      @extend .h1;
+      span {
+        color: $dark-gey-blue;
+      }
+    }
+  }
+}
