@@ -2,33 +2,36 @@ const gulp = require('gulp'),
       gulpSass = require('gulp-sass'),
       browserSync = require('browser-sync'),
       gulpConcat = require('gulp-concat'),
+      gulpPug = require('gulp-pug'),
       config = require('./config');
 
 // set path of files & folder
 const { src,
-        jsFolder,
         jsFiles,
-        sassFolder,
         sassFiles,
         sassMain,
         cssFolder,
-        htmlFiles,
         jsList: jsFilderToConcat,
-      } = config;
+        pugFiles,
+        pugMain,
+        port,
+} = config;
 
-// fuction to handle the errors
+// custom fuction to handle the errors
 function handleErr(err) {
   if (err) {
     console.log(err)
   }
 }
 
+// SASS task
 gulp.task('sass-task', () => {
   return gulp.src(sassMain)
         .pipe(gulpSass())
         .on('error', handleErr)
         .pipe(gulp.dest(cssFolder))
-        .pipe(browserSync.stream());
+        .pipe(browserSync.stream())
+        .pipe(browserSync.stream())
 });
 
 // javaScript task
@@ -37,21 +40,29 @@ gulp.task('js-task', () => {
         .pipe(gulpConcat("main.js"))
         .on('error', handleErr)
         .pipe(gulp.dest(src))
+        .pipe(browserSync.stream())
+});
+
+// html task
+gulp.task('pug-task', () => {
+  return gulp.src(pugMain)
+        .pipe(gulpPug({
+          pretty: true,
+        }))
+        .on('error', handleErr)
+        .pipe(gulp.dest(src))
+        .pipe(browserSync.stream())
 });
 
 // server & hotReload taks
 gulp.task('server-task', () => {
   browserSync.init({
+    ui: false,
+    port: port,
     server: {
-      port: 3000,
       baseDir: src,
     }
   })
-});
-
-// html task
-gulp.task('html-task', () => {
-  browserSync.reload();
 });
 
 // watch task
@@ -63,13 +74,14 @@ gulp.task('watch-task', () => {
   gulp.watch(jsFiles, ['js-task']);
 
   // watch html files & do the html task
-  gulp.watch(htmlFiles, ['html-task']);
+  gulp.watch(pugFiles, ['pug-task']);
 });
 
 // default task
 gulp.task('default', [
   'js-task',
   'sass-task',
+  'pug-task',
   'watch-task',
   'server-task',
 ]);
