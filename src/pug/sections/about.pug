@@ -1,0 +1,56 @@
+include ../mixins/section-main-heading
+
+-var aboutGridClass = ["col-xs-12","col-md-6","col-lg-6"];
+
+// Start About
+div#about
+  div.container
+    section.section-1
+      +section-main-heading('#[<span>about</span>] us', 'who we are', 'user')
+      div.row
+        div(class=aboutGridClass)
+          h3 we are 
+            span #{brand}
+          #line
+          p#para-1
+            | Lorem ipsum dolor sit amet consectetur adipisicing elit. Id suscipit ullam pariatur, magni corporis laboriosam ex alias, inventore minima fuga omnis, soluta tempora maiores in amet nulla accusamus aut dolorum.
+          ul#list-2.text-uppercase
+            li#selected our mission
+            li our advantages
+            li our garatees
+          p.para-2
+            | Lorem ipsum dolor sit amet consectetur adipisicing elit. Id suscipit ullam pariatur, magni corporis laboriosam ex alias, inventore minima fuga omnis, soluta tempora maiores in amet nulla accusamus aut dolorum.
+          button our portfolio
+        div(class=aboutGridClass)
+          #image-about
+          img(src="images/team-4503157_960_720.jpg", alt="")
+    section#section-2
+      div#overlay
+        div.container#content
+          div.row
+            div(class=aboutGridClass)
+              img(src="images/write-4491416__340.jpg", alt="")
+            div(id="project-manager" class=aboutGridClass)
+              h2 project manager
+              h3 miss wiam wiamita
+              p#parag-1
+                | Lorem ipsum dolor sit amet consectetur adipisicing elit. Id suscipit ullam pariatur, magni corporis laboriosam ex alias, inventore minima fuga omnis, soluta tempora maiores in amet nulla accusamus aut dolorum.
+              p#parag-2
+                | *Lorem ipsum dolor sit amet consectetur adipisicing elit. Id suscipit ullam pariatur, magni corporis laboriosam ex alias, inventore minima fuga omnis, soluta tempora maiores in amet nulla accusamus aut dolorum, inventore minima fuga omnis, soluta tempora maiores in amet nulla accusamus aut dolorum,
+                | inventore minima fuga omnis, soluta tempora maiores in amet nulla accusamus aut dolorum*
+              .social
+                div
+                  i.fa.fa-facebook-f.fa-2x
+                div
+                  i.fa.fa-twitter.fa-2x
+                div
+                  i.fa.fa-skype.fa-2x
+                div
+                  i.fa.fa-instagram.fa-2x
+                div
+                  i.fa.fa-linkedin-in.fa-2x
+                div
+                  i.fa.fa-youtube.fa-2x
+
+
+// End About

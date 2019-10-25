@@ -11,5 +11,5 @@ To develope this template you need to use  [npm](https://npmjs.org) or [yarn](ht
 ```npm install``` or ```yarn install```
 
 ### Run Dev Server ( with reload )
-```npm install``` or ```yarn install```
+```npm run dev``` or ```yarn dev```
 if the browser doesn't open automaticly open this url [localhost:3000](http://localhsot:3000)

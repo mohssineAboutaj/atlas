@@ -1,0 +1,17 @@
+// Start header
+header#home
+  div(id="carouselExampleIndicators", class="carousel slide", data-ride="carousel")
+    ul.carousel-indicators
+      li(data-target="#carouselExampleIndicators" data-slide-to="0" class="active")
+      li(data-target="#carouselExampleIndicators" data-slide-to="1")
+      li(data-target="#carouselExampleIndicators" data-slide-to="2")
+    div.carousel-inner
+      div.carousel-item.active
+        img(class="d-block w-100", src="images/first-slide.jpg", alt="First slide")
+      div.carousel-item
+        img(class="d-block w-100", src="images/second-slide.jpg", alt="First slide")
+    a(class="carousel-control-prev", href="#carouselExampleIndicators", role="button", data-slide="prev")
+      i.fa.fa-chevron-left
+    a(class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next")
+      i.fa.fa-chevron-right
+// End header

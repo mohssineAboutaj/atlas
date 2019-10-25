@@ -31,7 +31,6 @@ gulp.task('sass-task', () => {
         .on('error', handleErr)
         .pipe(gulp.dest(cssFolder))
         .pipe(browserSync.stream())
-        .pipe(browserSync.stream())
 });
 
 // javaScript task
